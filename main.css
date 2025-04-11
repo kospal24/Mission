@@ -1,0 +1,135 @@
+/* Global styles */
+body {
+  background-color: #f8eee2;
+}
+
+.navbar {
+  align-content: first baseline;
+  width: fixed 1, 440px;
+  height: 80px; /* Menyesuaikan ukuran logo */
+  background-color: #ffffff; /* Navbar dengan latar belakang putih */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+}
+
+.navbar-brand img {
+  width: fixed 1, 440px;
+  height: 80px; /* Menyesuaikan ukuran logo */
+}
+
+.card {
+  border-radius: 12px; /* Sudut membulat */
+  background-color: white;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+button.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+button.btn-outline-success {
+  border: 2px solid #28a745;
+  color: #28a745;
+}
+
+button.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+button.btn-outline-danger {
+  border: 2px solid #db4437;
+  color: #db4437;
+}
+
+button.btn-outline-danger:hover {
+  background-color: #db4437;
+  color: white;
+}
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form input,
+form button {
+  margin-bottom: 10px;
+}
+
+.custom-height {
+  height: 50px; /* Sesuaikan tinggi dengan kebutuhan Anda */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+section {
+  padding: 80px 13% 70px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 3, 5rem;
+  background-color: white;
+  padding: 20px;
+}
+.footer-content h4 {
+  color: black;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+.footer-content li {
+  margin-bottom: 16px;
+  list-style-type: none;
+}
+.footer-content li a {
+  display: block;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+.footer-content li a:hover {
+  transition: translateY(-3px) translateX(-5px);
+  color: #000000;
+}
+.footer-content p {
+  font-size: 13px;
+  color: black;
+  line-height: 30px;
+  margin: 6px 0;
+}
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+}
+
+.icon i {
+  font-size: 24px;
+  cursor: pointer;
+}
