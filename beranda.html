@@ -4,23 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beranda</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    
   </head>
   <body>
     <nav class="bg-white">
@@ -32,23 +21,21 @@
             <div class="flex shrink-0 items-center">
               <img
                 class="h-8 w-auto"
-                src="/assets/logo.png"
+                src="/assets//images/logo.png"
                 alt="Your Company"
               />
             </div>
           </div>
-
           <div
             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
           >
             <span class="hidden sm:block text-gray-600">Kategori</span>
-
             <!-- Profile dropdown -->
             <div class="relative ml-3">
               <div>
                 <button
                   type="button"
-                  class="relative flex rounded-full bg-white text-sm focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white focus:outline-hidden"
+                  class="relative flex rounded-full bg-white text-sm focus:ring-2 focus:ring-black focus:ring-offset-2 focus:ring-offset-white focus:outline-none"
                   id="user-menu-button"
                   aria-expanded="false"
                   aria-haspopup="true"
@@ -57,26 +44,24 @@
                   <span class="sr-only">Open user menu</span>
                   <img
                     class="size-8 rounded-full"
-                    src="/assets/prf.png"
+                    src="/assets//images/prf.png"
                     alt=""
                   />
                 </button>
               </div>
             </div>
           </div>
-
           <!-- Mobile menu, show/hide based on menu state. -->
           <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <button
               type="button"
-              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-200 hover:text-black focus:ring-2 focus:ring-black focus:outline-hidden focus:ring-inset"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-200 hover:text-black focus:ring-2 focus:ring-black focus:outline-none focus:ring-inset"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
               <span class="absolute -inset-0.5"></span>
               <span class="sr-only">Open main menu</span>
-
               <svg
                 class="block size-6"
                 fill="none"
@@ -114,31 +99,31 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row justify-content-center align-items-center min-vh-50">
-        <div class="col-md-15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center items-center min-h-[50vh]">
+        <div class="w-full">
           <!-- banner -->
           <div
-            class="card p-4 bg-[url('/assets/blog.jpg')] h-96 bg-cover bg-center object-fill"
+            class="relative p-4 bg-[url('/assets/blog.jpg')] h-72 sm:h-80 md:h-96 bg-cover bg-center rounded-lg overflow-hidden"
           >
             <div
               class="absolute inset-0 bg-black/70 flex justify-center items-center"
             >
               <div
-                class="w-full md:w-1/2 text-center space-y-3 flex flex-col justify-center items-center px-4"
+                class="w-full md:w-2/3 lg:w-1/2 text-center space-y-3 flex flex-col justify-center items-center px-4"
               >
-                <h1 class="text-white text-3xl font-bold">
+                <h1 class="text-white text-2xl sm:text-3xl font-bold">
                   Revolusi Pembelajaran: Temukan Ilmu Baru Melalui Platform
                   Video Interaktif
                 </h1>
-                <p class="text-white text-xs">
+                <p class="text-white text-xs sm:text-sm">
                   Temukan ilmu baru yang menarik dan mendalam melalui koleksi
                   video pembelajaran berkualitas tinggi. Tidak hanya itu, Anda
                   juga dapat berpartisipasi dalam latihan interaktif yang akan
                   meningkatkan pemahaman Anda.
                 </p>
                 <button
-                  class="bg-green-600 text-white text-sm p-2 ring-1 ring-white rounded-lg w-70 mx-auto"
+                  class="bg-green-600 text-white text-xs sm:text-sm p-2 ring-1 ring-white rounded-lg w-full sm:w-70 mx-auto hover:bg-green-700 transition-colors"
                 >
                   Temukan Video Course untuk Dipelajari
                 </button>
@@ -150,40 +135,40 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row justify-content-center align-items-center min-vh-50">
-        <div class="py-6 px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center items-center min-h-[50vh]">
+        <div class="py-6 px-4 sm:px-8 w-full">
           <div class="text-left mb-2">
-            <h1 class="text-3xl font-semibold text-gray-800">
+            <h1 class="text-2xl sm:text-3xl font-semibold text-gray-800">
               Koleksi Video Pembelajaran Unggulan
             </h1>
-            <p class="text-lg text-gray-500">
+            <p class="text-base sm:text-lg text-gray-500">
               Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!
             </p>
           </div>
-          <div class="flex justify-left space-x-8">
+          <div class="flex flex-wrap justify-start space-x-2 sm:space-x-8">
             <button
-              class="text-red-500 border-b-2 border-red-500 py-2 px-4 focus:outline-none"
+              class="text-red-500 border-b-2 border-red-500 py-2 px-3 sm:px-4 focus:outline-none text-sm sm:text-base"
             >
               Semua Kelas
             </button>
             <button
-              class="text-gray-600 py-2 px-4 hover:text-red-500 focus:outline-none"
+              class="text-gray-600 py-2 px-3 sm:px-4 hover:text-red-500 focus:outline-none text-sm sm:text-base"
             >
               Pemasaran
             </button>
             <button
-              class="text-gray-600 py-2 px-4 hover:text-red-500 focus:outline-none"
+              class="text-gray-600 py-2 px-3 sm:px-4 hover:text-red-500 focus:outline-none text-sm sm:text-base"
             >
               Desain
             </button>
             <button
-              class="text-gray-600 py-2 px-4 hover:text-red-500 focus:outline-none"
+              class="text-gray-600 py-2 px-3 sm:px-4 hover:text-red-500 focus:outline-none text-sm sm:text-base"
             >
               Pengembangan Diri
             </button>
             <button
-              class="text-gray-600 py-2 px-4 hover:text-red-500 focus:outline-none"
+              class="text-gray-600 py-2 px-3 sm:px-4 hover:text-red-500 focus:outline-none text-sm sm:text-base"
             >
               Bisnis
             </button>
@@ -192,12 +177,12 @@
       </div>
     </div>
 
-    <div class="container mx-auto px-6 py-8">
+    <div class="max-w-7xl mx-auto px-6 py-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g1.jpg"
+            src="/assets/images/g1.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -211,7 +196,7 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf1.png"
+                src="/assets/images/prf1.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
@@ -229,7 +214,7 @@
         <!-- Card 2 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g2.jpg"
+            src="/assets/images/g2.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -243,11 +228,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf2.png"
+                src="/assets/images/prf2.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -261,7 +246,7 @@
         <!-- Card 3 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g3.jpg"
+            src="/assets/images/g4.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -275,11 +260,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf3.png"
+                src="/assets/images/prf3.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -293,7 +278,7 @@
         <!-- Card 4 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g4.jpg"
+            src="/assets/images/g4.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -307,11 +292,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf4.png"
+                src="/assets/images/prf4.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -322,10 +307,10 @@
           </div>
         </div>
 
-        <!-- Card 5 -->
+        <!-- card 5 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g5.jpg"
+            src="/assets/images/g4.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -339,11 +324,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf5.png"
+                src="/assets/images/prf4.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -354,10 +339,10 @@
           </div>
         </div>
 
-        <!-- Card 6 -->
+        <!-- card 6 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g6.jpg"
+            src="/assets/images/g4.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -371,11 +356,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf6.png"
+                src="/assets/images/prf4.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -386,10 +371,10 @@
           </div>
         </div>
 
-        <!-- Card 7 -->
+        <!-- card 7 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g7.jpg"
+            src="/assets/images/g4.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -403,11 +388,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf7.png"
+                src="/assets/images/prf4.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -418,10 +403,10 @@
           </div>
         </div>
 
-        <!-- Card 8 -->
+        <!-- card 8 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g8.jpg"
+            src="/assets/images/g4.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -435,11 +420,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf8.png"
+                src="/assets/images/prf4.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -449,11 +434,9 @@
             <span class="underline text-gray-500 text-sm">3,5(86)</span>
           </div>
         </div>
-
-        <!-- Card 9 -->
         <div class="bg-white p-6 rounded-lg shadow-lg">
           <img
-            src="/assets/g9.jpg"
+            src="/assets/images/g4.jpg"
             alt="image"
             class="w-full h-48 object-cover rounded-t-lg mb-4"
           />
@@ -467,11 +450,11 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center space-x-2">
               <img
-                src="/assets/prf9.png"
+                src="/assets/images/prf4.png"
                 alt="avatar"
                 class="rounded-full w-8 h-8"
               />
-              <p class="text-sm text-gray-600 mb-3">Jenna Ortega</p>
+              <p class="text-sm text-gray-600">Jenna Ortega</p>
             </div>
             <p class="text-green-500 text-lg font-semibold">Rp 300K</p>
           </div>
@@ -482,100 +465,132 @@
           </div>
         </div>
       </div>
-    </div>
 
     <!-- banner bawah -->
-    <div class="container">
-      <div class="row justify-content-center align-items-center min-vh-50">
-        <div class="col-md-15">
-          <!-- banner -->
+<div class="py-10">
+  <div class="max-w-7l mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-center items-center min-h-[50vh]">
+      <div class="w-full">
+        <!-- banner -->
+        <div
+          class="relative p-4 bg-[url('/assets/images/bn2.jpg')] h-96 bg-cover bg-center rounded-lg overflow-hidden"
+        >
           <div
-            class="card p-4 bg-[url('/assets/bn2.jpg')] h-96 bg-cover bg-center object-fill"
+            class="absolute inset-0 bg-black/70 flex justify-center items-center"
           >
             <div
-              class="absolute inset-0 bg-black/70 flex justify-center items-center"
+              class="w-full md:w-1/2 text-center space-y-3 flex flex-col justify-center items-center px-4"
             >
-              <div
-                class="w-full md:w-1/2 text-center space-y-3 flex flex-col justify-center items-center px-4"
-              >
-                <h1 class="text-white text-3xl font-bold">
-                  Mau Belajar Lebih Banyak?
-                </h1>
-                <p class="text-white text-sm">
-                  Daftarkan Dirimu untuk mendapatkan informasi terbaru dan
-                  penawaran spesial dari program-program terbaik Hariesok.id
-                </p>
-
-                <div class="w-full max-w-sm min-w-[200px]">
-                  <div class="relative">
-                    <input
-                      type="email"
-                      class="w-full placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-3 pr-16 py-2 duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300"
-                      placeholder="Email Address"
-                    />
-                    <button
-                      class="absolute right-1 top-1 rounded bg-yellow-800 py-1 px-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow focus:bg-yellow-700 focus:shadow-none active:bg-yellow-700 hover:bg-yellow-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                      type="button"
-                    >
-                      Subscribe
-                    </button>
-                  </div>
+              <h1 class="text-white text-3xl font-bold">
+                Mau Belajar Lebih Banyak?
+              </h1>
+              <p class="text-white text-sm">
+                Daftarkan Dirimu untuk mendapatkan informasi terbaru dan
+                penawaran spesial dari program-program terbaik Hariesok.id
+              </p>
+              <div class="w-full max-w-sm min-w-[200px]">
+                <div class="relative">
+                  <input
+                    type="email"
+                    class="w-full placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md pl-3 pr-16 py-2 duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300"
+                    placeholder="Email Address"
+                  />
+                  <button
+                    class="absolute right-1 top-1 rounded bg-yellow-800 py-1 px-2.5 border border-transparent text-center text-sm text-white transition-all shadow-sm hover:shadow focus:bg-yellow-700 focus:shadow-none active:bg-yellow-700 hover:bg-yellow-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                    type="button"
+                  >
+                    Subscribe
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <!-- end banner -->
+        </div>
+        <!-- end banner -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- footer -->
+<div class="py-[30px]">
+  <footer class="bg-gray-100 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="space-y-4">
+          <img src="/assets/images/logo.png" alt="" class="rounded-full w-50 h-20" />
+          <p class="font-bold text-xs text-gray-800">
+            Gali Potensi Anda Melalui pembelajaran Video di Hariesok.id!
+          </p>
+          <p class="text-sm text-gray-600">Jl.Usman Efendi No.50 Lowokwaru,Malang</p>
+          <p class="text-sm text-gray-600">+62 0987656789</p>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-gray-800">Kategori</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Digital & Teknologi</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Pemasaran</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Menejemen Bisnis</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Pengembangan Diri</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Desain</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-gray-800">Perusahaan</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Tentang Kami</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">FAQ</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Kebijakan Privasi</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Ketentuan Layanan</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Bantuan</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-gray-800">Komunitas</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Tips Sukses</a></li>
+            <li><a href="#" class="text-sm text-gray-600 hover:text-gray-800 transition-colors">Blog</a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- footer -->
-    <section class="footer">
-      <div class="footer-content">
-        <img src="/assets/logo.png" alt="" class="rounded-full w-47 h-20" />
-        <p class="font-bold text-xs">
-          Gali Potensi Anda Melalui pembelajaran Video di Hariesok.id!
-        </p>
-        <p>Jl.Usman Efendi No.50 Lowokwaru,Malang</p>
-        <p>+62 0987656789</p>
-      </div>
-
-      <div class="footer-content">
-        <h4>Kategori</h4>
-        <li><a href="#">Digital & Teknologi</a></li>
-        <li><a href="#">Pemasaran</a></li>
-        <li><a href="#">Menejemen Bisnis</a></li>
-        <li><a href="#">Pengembangan Diri</a></li>
-        <li><a href="#">Desain</a></li>
-      </div>
-
-      <div class="footer-content">
-        <h4>Perusahaan</h4>
-        <li><a href="#">Tentang Kami</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Kebijakan Privasi</a></li>
-        <li><a href="#">Ketentuan Layanan</a></li>
-        <li><a href="#">Bantuan</a></li>
-      </div>
-
-      <div class="footer-content">
-        <h4>Komunitas</h4>
-        <li><a href="#">Tips Sukses</a></li>
-        <li><a href="#">Blog</a></li>
-      </div>
-    </section>
-
-    <section class="footer">
-      <div class="footer-content">
-        <hr />
-        <p>@2023 Gerobak Sayur All Rights Reserved</p>
-        <div class="icon">
-          <i class="bi bi-linkedin"></i>
-          <i class="bi bi-facebook"></i>
-          <i class="bi bi-instagram"></i>
-          <i class="bi bi-twitter"></i>
+  <footer class="bg-gray-200 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div class="w-full">
+          <hr class="border-gray-300 mb-4" />
         </div>
       </div>
-    </section>
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <p class="text-sm text-gray-600">@2023 Gerobak Sayur All Rights Reserved</p>
+        <div class="flex space-x-4">
+          <i class="bi bi-linkedin text-gray-600 hover:text-blue-600 transition-colors cursor-pointer text-lg"></i>
+          <i class="bi bi-facebook text-gray-600 hover:text-blue-600 transition-colors cursor-pointer text-lg"></i>
+          <i class="bi bi-instagram text-gray-600 hover:text-pink-600 transition-colors cursor-pointer text-lg"></i>
+          <i class="bi bi-twitter text-gray-600 hover:text-blue-400 transition-colors cursor-pointer text-lg"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+    mobileMenuButton.addEventListener('click', () => {
+      const menuOpenIcon = mobileMenuButton.querySelector('svg.block');
+      const menuCloseIcon = mobileMenuButton.querySelector('svg.hidden');
+      menuOpenIcon.classList.toggle('hidden');
+      menuCloseIcon.classList.toggle('hidden');
+      // TODO: Toggle actual mobile menu visibility here if implemented
+    });
+  </script>
+
   </body>
 </html>
